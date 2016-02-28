@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/ud_topLayout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11223344"
+        android:layout_alignParentTop="true"
+        >
+    
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="User Details"
+            />
+        <ImageButton 
+            android:layout_width="50dp" 
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#22332211"
+            />
+        
+       </RelativeLayout>
+ 
+        
+        
+        
+ 
+       <ImageView 
+           android:id="@+id/dc_avatar_iv"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/ud_topLayout_rl"
+           android:src="@drawable/ic_launcher"
+           />
+       <TextView 
+           android:id="@+id/dc_userName_tv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/dc_avatar_iv"
+           android:layout_centerHorizontal="true"
+           android:text="user details"
+           />
+       
+       <TextView 
+           android:id="@+id/ud_introduction_tv"
+           android:layout_below="@id/dc_userName_tv"
+           android:layout_centerHorizontal="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="this is user introduction"
+           />
+    
+        <View 
+           android:id="@+id/ud_upperLine_v"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/ud_introduction_tv"
+           android:layout_height="5dp"
+           android:layout_width="200dp"
+           android:background="#88776622"
+           />   
+       <LinearLayout 
+           android:id="@+id/ud_buttonContainer_up_ll"
+           android:layout_below="@id/ud_upperLine_v"
+           android:layout_centerHorizontal="true"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <Button 
+               android:id="@+id/ud_followBt_bt"
+               android:layout_height="wrap_content"
+               android:layout_width="100dp"
+               android:layout_weight="0.5"  
+               android:text="Follows:1"     
+               android:gravity="center"      
+               android:background="@android:color/transparent"
+               />
+           <Button
+               android:id="@+id/ud_fansBt_bt"
+               android:layout_height="wrap_content"
+               android:layout_width="100dp"
+               android:layout_weight="0.5"
+               android:text="Fans:2"
+               android:layout_gravity="center"
+               android:background="@android:color/transparent"
+               />                           
+       </LinearLayout>
+       
+     
+       <View 
+           android:id="@+id/ud_middleLine_v"
+           android:layout_below="@id/ud_buttonContainer_up_ll"
+           android:layout_height="10dp"
+           android:layout_width="match_parent"
+           android:background="#88776622"
+           /> 
+       
+       <LinearLayout 
+           android:id="@+id/ud_middleLine_ve"
+           android:layout_below="@id/ud_buttonContainer_up_ll"
+           android:layout_centerHorizontal="true"
+           android:layout_width="200dp"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           <Button 
+               android:id="@+id/ud_vedioBt_bt"
+               android:layout_height="wrap_content"
+               android:layout_width="100dp"
+               android:layout_weight="0.5"  
+               android:text="Vedio:1"     
+               android:gravity="center"      
+               android:background="@android:color/transparent" 
+               />
+           <Button
+               android:id="@+id/ud_collectionBt_bt"
+               android:layout_height="wrap_content"
+               android:layout_width="100dp"
+               android:layout_weight="0.5"
+               android:text="Favorite:2"
+               android:layout_gravity="center"
+               android:background="@android:color/transparent"
+               />                           
+       </LinearLayout>
+       
+</RelativeLayout>

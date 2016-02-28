@@ -1,0 +1,17 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1430983950000 64919 d1bc4b32c6b035e96850fe133c5a48f386da9333 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\mAppTracker.jar
+1430983950000 64919 d1bc4b32c6b035e96850fe133c5a48f386da9333 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\mAppTracker.jar
+1435803518643 298542 15aca373cd2b327dea71b821a6cb803de8de2629 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\playerBase.jar
+1435803518643 298542 15aca373cd2b327dea71b821a6cb803de8de2629 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\playerBase.jar
+1430983950000 89077 042e0b06aa76002efa7158bd92a01e8a0a25fcc8 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\YoukuAnalytics.jar
+1430983950000 89077 042e0b06aa76002efa7158bd92a01e8a0a25fcc8 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\YoukuAnalytics.jar
+1430983950000 352360 c1f5317e11bd2638095549d4806b0753dfeb2249 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\fastjson-1.1.24.jar
+1430983950000 352360 c1f5317e11bd2638095549d4806b0753dfeb2249 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\fastjson-1.1.24.jar
+1430983951000 52759 21b4501ec2497d313fbf7be2ca32aac9f717d5f8 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\tracking.jar
+1430983951000 52759 21b4501ec2497d313fbf7be2ca32aac9f717d5f8 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\tracking.jar
+1403515040000 758727 efec67655f6db90757faa37201efcee2a9ec3507 D:\workspaceForAdt150520_3\appcompat_v7\libs\android-support-v4.jar
+1442999213500 758727 efec67655f6db90757faa37201efcee2a9ec3507 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\android-support-v4.jar
+1430983951000 93435 e4d675cdbc212865470e02b16a7f2687358f4b34 D:\workspaceForAdt150520_3\MeiRenYu_4\libs\baseproject.jar
+1430983951000 93435 e4d675cdbc212865470e02b16a7f2687358f4b34 D:\workspaceForAdt150520_3\YoukuPlayerOpenSDK\libs\baseproject.jar

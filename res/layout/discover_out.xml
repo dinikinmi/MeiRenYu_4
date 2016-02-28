@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disc_out_topLayout_rl"
+        >
+         
+          
+
+         <TextView 
+             android:id="@+id/disc_out_discoverStr_tv"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:text="Discover"
+             android:textSize="50px"
+             android:gravity="center_horizontal"
+             android:paddingTop="20dp"
+             android:paddingBottom="20dp"
+             android:background="#FFFF85AA"
+             android:textColor="#FFFFFF"
+             />
+         
+
+         
+         <LinearLayout 
+             android:id="@+id/disc_out_topContainer_ll"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/disc_out_discoverStr_tv"
+             android:orientation="horizontal"
+             android:background="#FFEEEEEE"
+             android:layout_marginBottom="10dp"
+             >
+             
+             <EditText 
+                 android:id="@+id/disc_out_searchInput_et"
+                 android:layout_width="fill_parent"
+                 android:layout_weight="8"
+                 android:layout_height="wrap_content"
+                 android:hint="input here"
+                 />
+             <Button 
+                 android:id="@+id/disc_out_startSearch_bt"
+                 android:layout_weight="2"
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/zoomer"
+                  />
+                  
+         </LinearLayout>
+        
+        <android.support.v4.view.ViewPager
+            android:id="@+id/disc_out_meatVP_vp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/disc_out_topContainer_ll"
+            />
+         
+         
+        
+    </RelativeLayout>
+    
+
+</LinearLayout>

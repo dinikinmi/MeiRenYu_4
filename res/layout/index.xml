@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/indx_topRelativeLayout_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#51223344"
+         >
+        
+      <LinearLayout
+           android:id="@+id/indx_topButtonLayout_ll"
+           android:layout_centerInParent="true"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           
+           >
+          
+          <Button
+              android:id="@+id/indx_recommend_bt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="recommend"  
+              android:background="#22332211"
+              />
+          
+          <Button
+              android:id="@+id/indx_follow_bt"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="  follow  "
+              />
+          
+          
+      </LinearLayout>        
+     
+        
+        
+      
+      
+    </RelativeLayout>
+   
+    
+    
+</RelativeLayout>

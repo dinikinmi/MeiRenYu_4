@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF"
+    >
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFFFF"
+    >
+    
+    <ImageButton
+        android:id="@+id/cmlvItem_avatar_ib"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true" 
+        android:src="@drawable/ic_launcher"/>
+    
+    <RelativeLayout
+        android:id="@+id/cmlvItem_topLayout_rl" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cmlvItem_avatar_ib"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFFFF">
+    
+     <TextView
+         android:id="@+id/cmlvItem_posterName_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:text="uploader Name"
+         android:textSize="20dp"
+         />
+     <TextView
+         android:id="@+id/cmlvItem_time_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:text="2015-09-12 11:12"
+         />
+         "
+          </RelativeLayout>
+ 
+  <TextView 
+        android:id="@+id/cmlvItem_cmContent_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cmlvItem_avatar_ib"
+        android:layout_below="@id/cmlvItem_topLayout_rl"
+        android:layout_marginTop="5dp"
+        android:text="commence content"
+        android:textSize="30px"
+        />
+
+
+ 
+ </RelativeLayout>
+ 
+    </LinearLayout>
+    

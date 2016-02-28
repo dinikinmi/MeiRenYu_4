@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/rcmLvItem2_topLayout_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+         >
+        <ImageView
+            android:id="@+id/rcmLvItem2_posterAvatar_iv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_launcher"
+            />
+        <TextView 
+            android:id="@+id/rcmLvItem2_posterName_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rcmLvItem2_posterAvatar_iv"
+            android:text="uploader"
+            />
+        <TextView 
+            android:id="@+id/rcmLvItem2_postTime_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rcmLvItem2_posterAvatar_iv"
+            android:layout_below="@id/rcmLvItem2_posterName_tv"
+            android:text="15-09-24 13:12"
+            />
+        
+        
+        <ImageButton
+            android:id="@+id/rcmLvItem2_moreButton_ib"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"        
+            />
+        
+    </RelativeLayout>
+    
+
+    
+     <FrameLayout 
+         android:id="@+id/rcmLvItem2_picFrame_fl"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         >
+         
+         <ImageView 
+             android:id="@+id/rcmLvItem2_coverPic_iv"
+             android:layout_width="fill_parent"
+             android:layout_height="100dp"
+             android:background="@drawable/test"
+              />
+         
+         
+         <ImageView 
+             android:id="@+id/rcmLvItem2_triangleShape_iv"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_gravity="center"
+             android:background="@drawable/play"
+              />
+         
+         <TextView 
+             android:id="@+id/rcmLvItem2_veidoTitle_tv"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_gravity="bottom"
+             android:background="#30000011"
+             android:text="this is vedio title"
+             android:paddingTop="10dp"
+             android:paddingBottom="5dp"
+             android:paddingLeft="10dp"
+             android:textSize="20px"
+             />
+         
+         
+         
+         
+         
+     </FrameLayout>
+    
+    
+     
+     <RelativeLayout
+         android:id="@+id/rcmLvItem2_bottomLayout_rl"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#FFFFFFFF"
+          >
+        
+         <TextView 
+             android:id="@+id/rcmLvItem2_discription_tv"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:text="this is vedio discription"
+             android:layout_marginTop="10dp"
+             android:layout_marginLeft="5dp"
+              />
+       
+         <View  
+             android:id="@+id/line"
+             android:layout_width="fill_parent"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="10dp"
+             android:layout_height="1px"
+             android:layout_below="@id/rcmLvItem2_discription_tv"
+             android:background="?android:attr/listDivider" />
+         
+         
+         
+          
+         <RelativeLayout
+             android:id="@+id/rcmLvItem2_operationLayout_rl"
+             android:layout_below="@id/line"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             >
+           <ImageButton
+               android:id="@+id/rcmLvItem2_like_ib"
+               android:layout_width="20dp"
+               android:layout_height="20dp"
+               android:layout_alignParentLeft="true"
+               android:background="@drawable/heart_1"
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+               />
+           
+             <TextView 
+                 android:id="@+id/rcmLvItem2_likeTimes_tv"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@id/rcmLvItem2_like_ib"
+                 android:text="123"
+                 
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+                 />
+         
+          
+               <TextView 
+                 android:id="@+id/rcmLvItem2_playTimes_tv"
+                 android:layout_toRightOf="@id/rcmLvItem_playButton_ib"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:text="123"
+                 
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+                 />
+             
+             <ImageButton 
+                 android:id="@+id/rcmLvItem2_playButton_ib"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:layout_toLeftOf="@id/rcmLvItem2_playTimes_tv"
+                 android:background="@drawable/play_start"
+                 
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+                 />
+          
+        
+             
+             
+             <TextView 
+                 android:id="@+id/rcmLvItem2_cmTimes_tv"
+                 android:layout_alignParentRight="true"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="123"
+                 
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+                 />
+
+             
+             <ImageButton
+                 android:id="@+id/rcmLvItem2_cmButton_ib"
+                 android:layout_toLeftOf="@id/rcmLvItem2_cmTimes_tv"
+                 android:layout_width="20dp"
+                 android:layout_height="20dp"
+                 android:background="@drawable/commence"
+                 
+               android:layout_marginTop="5dp"
+               android:layout_marginBottom="10dp"
+               android:layout_centerVertical="true"
+                 />
+              </RelativeLayout>
+     </RelativeLayout>
+     
+     
+</LinearLayout>

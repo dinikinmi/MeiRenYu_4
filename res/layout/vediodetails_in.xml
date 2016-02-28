@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#FFEEEEEE">
+<LinearLayout 
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFEEEEEE">
+
+    <LinearLayout
+        android:id="@+id/vdi_topLayout_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+             <RelativeLayout
+                 android:id="@+id/vdi_topLayout_rl"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="#FFFFFFFF"
+                 >
+                 <ImageView
+                     android:id="@+id/vdi_avatar_iv"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:background="@drawable/ic_launcher"
+                     android:layout_alignParentLeft="true"
+                       />
+                 <TextView 
+                     android:id="@+id/vdi_posterName_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toRightOf="@id/vdi_avatar_iv"
+                     android:text="uploader"
+                     android:textSize="30px"
+                     />
+                 <TextView 
+                     android:id="@+id/vdi_poseTime_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/vdi_posterName_tv"
+                     android:layout_alignParentBottom="true"
+                     android:layout_toRightOf="@id/vdi_avatar_iv"
+                     android:text="2015-09-25 11:12"
+                     />
+                 <Button
+                     android:id="@+id/vdi_follow_bt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_marginTop="5dp"
+                     android:text="follow"
+                     android:background="@drawable/button_back_stroke"
+                     />
+                 
+                 
+             </RelativeLayout>
+        
+             <FrameLayout 
+                 android:layout_marginTop="2dp"
+                 android:id="@+id/vdi_vedioShowPane_fl"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:background="#FFFFFFFF">
+                 
+                 <ImageView
+                     android:id="@+id/vdi_vedioCover_iv"
+                     android:layout_width="fill_parent"
+                     android:layout_height="150dp"
+                     android:background="@drawable/test"
+                      />
+
+                 <ImageView
+                     android:id="@+id/vdi_trianglePic_iv"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:layout_gravity="center"
+                     android:background="@drawable/play" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"     
+                android:background="#33FFFFFF"
+                >
+                 <TextView 
+                     android:id="@+id/vdi_vedioTitle_tv"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:paddingTop="5dp"
+                     android:paddingBottom="5dp"
+                     android:text="Vedio Title"
+                     android:textColor="#FFFFFF"
+                     android:layout_gravity="top"
+                     android:layout_marginLeft="10dp"
+                     />
+                 </LinearLayout>
+                 
+                 <RelativeLayout
+                     android:id="@+id/vdi_bottomLayout_rl"
+                     android:layout_width="fill_parent" 
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="bottom"
+                     android:background="#30FFFFFF">
+                     
+                     <ImageButton 
+                         android:id="@+id/vdi_like_ib"
+                         android:layout_width="20dp"
+                         android:layout_height="20dp"
+                         android:layout_alignParentLeft="true"
+                         android:background="@drawable/heart_1"
+                         android:layout_marginLeft="10dp"
+                         />
+                     
+                     <TextView
+                         android:id="@+id/vdi_likeTimes_tv"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/vdi_like_ib"
+                         android:layout_marginLeft="5dp"
+                         android:text="123"
+                       />
+                        
+                        <TextView 
+                            android:id="@+id/vdi_playTimes_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="456"
+                            android:layout_marginRight="5dp"
+                            />               
+                         <ImageButton
+                             android:id="@+id/vdi_playButton_ib"
+                             android:layout_width="20dp"
+                             android:layout_height="20dp"
+                             android:layout_toLeftOf="@id/vdi_playTimes_tv"
+                             android:background="@drawable/play_start"
+                             android:layout_marginRight="10dp"
+                             />
+                    </RelativeLayout>
+                 
+             </FrameLayout>
+             
+             
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"   
+             android:background="#FFFFFFFF"  
+             >
+             <TextView 
+                 android:id="@+id/vdi_discription_tv"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:text="thi is vedio dsicription"
+                 android:background="#FFFFFFFF"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginBottom="5dp"
+                 />
+             </LinearLayout>
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/vdi_recommendVdVpContainer_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFFFF"
+         >
+        <TextView 
+            android:id="@+id/vdi_recommendStr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vedio Recommend"
+            android:layout_gravity="left"
+            android:textSize="30px"/>
+        
+        <LinearLayout 
+         android:id="@+id/vdi_recommendLayout_ll"   
+         android:orientation="horizontal"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:background="#FFFFFFFF"
+         android:layerType="software"
+         android:clipChildren="false">
+       
+  
+         <android.support.v4.view.ViewPager
+              android:id="@+id/vdi_recommendVp_vp"
+              android:layout_width="fill_parent"
+              android:layout_height="150dp"
+              android:layout_marginLeft="26dp"  
+              android:layout_marginRight="26dp"
+              android:clipChildren="false" 
+              >
+         </android.support.v4.view.ViewPager>
+               
+        </LinearLayout>
+          
+      
+          
+    </LinearLayout>
+    
+    
+   <LinearLayout
+       android:id="@+id/vdi_commenceLvContainer_ll"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <LinearLayout 
+           android:id="@+id/vdi_commenceLvTitle_ll"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           
+           <TextView
+               android:id="@+id/vdi_commenceStr_tv"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="left" 
+               android:text="COMMENCE"
+               android:layout_marginBottom="8dp"/>
+           <TextView
+               android:id="@+id/vdi_commenceTimes_tv"
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content"
+               android:text="123"/>
+       </LinearLayout>
+       
+       <ListView
+           android:id="@+id/vdi_commenceLv_lv"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+            android:divider="#00000000" 
+            android:dividerHeight="18dp" 
+            />
+       
+   </LinearLayout>
+    
+    
+</LinearLayout>
+</ScrollView>

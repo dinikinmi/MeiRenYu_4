@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/msg_titleLayout_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#FFFF85AA" 
+        android:layout_alignParentTop="true"  
+        >
+        
+        <TextView 
+            android:id="@+id/msg_msgStr_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=" MESSAGE "
+            />
+        
+    </RelativeLayout>
+    
+ <RelativeLayout
+     android:id="@+id/msg_optionLayout_rl"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:background="#FFFFFFFF"
+     android:layout_below="@id/msg_titleLayout_rl"
+      >
+        
+     <TextView 
+         android:id="@+id/msg_cmStr_tv"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+         android:text="Commence"
+         android:layout_alignParentLeft="true"/>
+     
+     <TextView  
+      android:id="@+id/msg_left_line_tv"
+      android:layout_width="50dp"
+      android:layout_height="20px"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/msg_cmStr_tv"
+      android:background="#FFFF85AA"
+      android:visibility="invisible"
+       />
+         
+      <TextView
+          android:id="@+id/msg_noticeStr_tv"
+          android:layout_width="50dp"
+          android:layout_height="wrap_content"
+          android:text="Notification"
+          android:layout_centerHorizontal="true" />
+      
+     <TextView  
+      android:id="@+id/msg_middle_line_tv"
+      android:layout_width="50dp"
+      android:layout_height="20px"
+      android:layout_centerHorizontal="true"
+      android:layout_below="@id/msg_noticeStr_tv"
+      android:background="#FFFF85AA" 
+      android:visibility="invisible"
+      />
+       
+       <TextView 
+           android:id="@+id/msg_priMsgStr_tv"
+           android:layout_width="50dp" 
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:text="PrivateMessage"
+           />  
+     <TextView  
+      android:id="@+id/msg_right_line_tv"
+      android:layout_width="50dp"
+      android:layout_height="20px"
+      android:layout_below="@id/msg_priMsgStr_tv"
+      android:layout_alignParentRight="true"
+      android:background="#FFFF85AA" 
+      android:visibility="invisible"/>
+        
+     
+     
+</RelativeLayout> 
+     
+     
+
+    <android.support.v4.view.ViewPager
+     android:id="@+id/msg_meatVp_vp"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:layout_below="@id/msg_optionLayout_rl"
+     android:layout_marginTop="10dp"
+     />
+
+
+</RelativeLayout>

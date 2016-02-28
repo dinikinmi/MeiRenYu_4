@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFFFF" 
+    android:paddingTop="10dp">
+    
+    <ImageView 
+        android:id="@+id/msgCL_item_avatar_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView 
+        android:id="@+id/msgCL_item_senderName_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/msgCL_item_avatar_iv"
+        android:layout_alignParentTop="true"
+        android:text="Sender's Name"
+        />
+        
+    <TextView 
+        android:id="@+id/msgCL_item_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/msgCL_item_avatar_iv"
+        android:layout_below="@id/msgCL_item_senderName_tv"
+        android:layout_marginTop="10dp"
+        android:text="2015-09-12 11:12"
+        />
+    <TextView 
+        android:id="@+id/msgCL_item_cmContent_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msgCL_item_avatar_iv"
+        android:layout_marginLeft="20dp"
+        android:text="commence content"
+        />
+    
+    <Button 
+        android:id="@+id/msgCL_item_reply_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/button_back_stroke"
+        android:text="Reply"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/msgCL_item_bottomLayout_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/msgCL_item_cmContent_tv"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        >
+        <ImageView
+            android:id="@+id/msgCL_item_vdCover_iv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="7"
+            android:background="@drawable/test"
+            />
+        <TextView
+            android:id="@+id/msgCL_item_vdDiscription_tv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="50dp"
+            android:background="#33221111"
+            android:layout_weight="3"
+            android:text="/@/Me:this is the vedio discription"
+            />
+             
+    </LinearLayout>
+    <View 
+        android:layout_below="@id/msgCL_item_bottomLayout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FFEEEEEE"
+        />
+    
+
+</RelativeLayout>

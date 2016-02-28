@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <FrameLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+       >
+
+   <ImageView 
+       android:id="@+id/rcmHrL_vdCover_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="fill_vertical"
+        android:src="@drawable/test"
+        />
+    
+
+
+<TextView 
+        android:id="@+id/rcmHrL_vdTitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="vedio title"
+        android:layout_gravity="bottom"
+        android:background="#00112211"
+        />
+ 
+</FrameLayout>
+
+

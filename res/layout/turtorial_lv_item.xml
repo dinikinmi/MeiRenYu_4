@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+
+    <RelativeLayout
+        android:id="@+id/turLvItem_vdDetailsLayout_left_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="2dp"
+        >
+        <ImageView
+            android:id="@+id/turLvItem_vdCover_left_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test"
+            android:layout_alignParentTop="true" />
+           
+        <TextView 
+            android:id="@+id/turLvItem_vdTitle_left_tv"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/turLvItem_vdCover_left_iv"
+            android:text="vedio title"
+            />
+        <TextView 
+            android:id="@+id/turLvItem_vdDiscription_left_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/turLvItem_vdTitle_left_tv"
+            android:text="this is vedio discription"
+            />
+        
+        <RelativeLayout 
+            android:id="@+id/turLvItem_controlPanel_left_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#11223311"
+            android:layout_below="@id/turLvItem_vdDiscription_left_tv"
+             >
+           
+        <ImageButton
+             android:id="@+id/turLvItem_playBt_left_ib"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_alignParentLeft="true"
+             android:src="@drawable/ic_launcher"
+             />
+        <TextView
+            android:id="@+id/turLvItem_playTimes_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/turLvItem_playBt_left_ib"
+            android:text="123"
+            />    
+            
+        <TextView 
+            android:id="@+id/turLvItem_likeTimes_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="123"
+            />
+        
+        <ImageButton
+            android:id="@+id/turLvItem_likeBt_left_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_toLeftOf="@id/turLvItem_likeTimes_left_tv"
+            />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/turLvItem_bottomLayout_left_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#22112233"
+            android:layout_below="@id/turLvItem_controlPanel_left_rl"
+            >
+         
+        <ImageButton
+            android:id="@+id/turLvItem_avatar_left_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+             />
+        
+        <TextView
+            android:id="@+id/turLvItem_uploaderName_left_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uploader's Name"
+            />
+                        
+        </LinearLayout>
+        
+    </RelativeLayout>
+       
+   
+    
+
+
+    
+    
+    
+    <RelativeLayout
+        android:id="@+id/turLvItem_vdDetailsLayout_right_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="5dp"
+        >
+        <ImageView
+            android:id="@+id/turLvItem_vdCover_right_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/test"
+            android:layout_alignParentTop="true" 
+            />
+        <TextView 
+            android:id="@+id/turLvItem_vdTitle_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/turLvItem_vdCover_right_iv"
+            android:text="vedio title"
+            />
+        <TextView 
+            android:id="@+id/turLvItem_vdDiscription_right_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this is vedio discription"
+            android:layout_below="@id/turLvItem_vdTitle_right_tv"
+            />
+        
+        <RelativeLayout 
+            android:id="@+id/turLvItem_controlPanel_right_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/turLvItem_vdDiscription_right_tv"
+            android:background="#11223311"
+            
+             >
+           
+        <ImageButton
+             android:id="@+id/turLvItem_playBt_right_ib"
+             android:layout_width="20dp"
+             android:layout_height="20dp"
+             android:layout_alignParentLeft="true"
+             android:src="@drawable/ic_launcher"
+             />
+        <TextView
+            android:id="@+id/turLvItem_playTimes_right_tv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/turLvItem_playBt_right_ib"
+            android:text="123"
+            />    
+            
+        <TextView 
+            android:id="@+id/turLvItem_likeTimes_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="123"
+            />
+        
+        <ImageButton
+            android:id="@+id/turLvItem_likeBt_right_ib"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_toLeftOf="@id/turLvItem_likeTimes_right_tv"
+            />
+        
+        </RelativeLayout>
+   
+        
+        <LinearLayout
+            android:id="@+id/turLvItem_bottomLayout_right_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#22112233"
+            android:layout_below="@id/turLvItem_controlPanel_right_rl"
+           
+            >
+         
+        <ImageButton
+            android:id="@+id/turLvItem_avatar_right_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_launcher"
+             />
+        
+        <TextView
+            android:id="@+id/turLvItem_uploaderName_right_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="uploader's Name"
+            />
+            
+            
+            
+        </LinearLayout>
+   
+        
+        
+        
+        
+        
+        </RelativeLayout>
+        
+    
+    
+</LinearLayout>

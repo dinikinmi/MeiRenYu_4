@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+         
+    <ImageView 
+        android:id="@+id/tkLv_item_leftAvatar_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher"
+        />
+    
+      <ImageView 
+        android:id="@+id/tkLv_item_rightAvatar_iv"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_launcher"
+          />
+    <LinearLayout
+       android:id="@+id/tkLv_item_contentLayout_ll"
+       android:orientation="vertical"
+       android:layout_toRightOf="@id/tkLv_item_leftAvatar_iv"
+       android:layout_toLeftOf="@id/tkLv_item_rightAvatar_iv"
+       android:layout_centerHorizontal="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+         >
+    
+      <TextView 
+        android:id="@+id/tkLv_item_content_tv"
+        android:padding="10dp" 
+        android:text="1123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    
+   </LinearLayout>
+      
+      
+</RelativeLayout>
+
+
+    
+    

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     >
+    
+    <RelativeLayout
+        android:id="@+id/vdo_topLayout_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#FFFF85AA"
+        >
+        
+        <ImageButton 
+            android:id="@+id/vdo_backButton_tv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text=" Back " 
+            android:background="@drawable/left_arrow"
+            />
+        
+        <TextView 
+            android:id="@+id/vdo_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="vedio_details"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            />
+        
+        <ImageButton
+            android:id="@+id/vdo_horn_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/horn"
+            />
+        
+    </RelativeLayout>
+   <!--  
+    <FrameLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+        
+    - -->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/vdo_bottomLayout_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFEEEEEE"
+        >
+    
+          <EditText 
+           android:id="@+id/vdo_commenceEt_et"
+           android:layout_width="200dp"
+           android:layout_weight="0.8"
+           android:layout_height="wrap_content"
+           android:hint="input the commence here"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           />
+     
+       <Button 
+           android:id="@+id/vdo_postCommence_bt"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.2"
+           android:background="@drawable/button_round_angle_grey_solid"
+           android:text=" OK "
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp"
+           />
+       
+    
+              
+    </LinearLayout>
+ <!-- 
+   <ScrollView
+       android:id="@+id/vdo_meateScr_scrv"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:layout_above="@+id/vdo_bottomLayout_ll"
+       android:layout_below="@+id/vdo_topLayout_rl"
+       android:layout_centerHorizontal="true" >
+ -->
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/vdo_bottomLayout_ll"
+    android:layout_below="@+id/vdo_topLayout_rl"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vdo_meatVp_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/vdo_topLayout_rl"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+   <!-- 
+   </ScrollView>     
+    -->
+    <!-- 
+     </FrameLayout>
+     -->
+    
+    
+    
+    
+
+</RelativeLayout>

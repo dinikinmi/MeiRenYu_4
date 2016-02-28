@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <ScrollView 
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+<RelativeLayout  
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF" 
+    android:paddingBottom="100dp">
+ 
+    <TextView 
+        android:id="@+id/disc_in_tutorialStr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Tutorial"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <ImageButton 
+        android:id="@+id/disc_in_rightArrow_ib"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/right_arrow"
+        />
+    
+    <HorizontalScrollView
+        android:id="@+id/disc_in_tutorial_hrscrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disc_in_tutorialStr_tv"
+        >
+     <LinearLayout 
+         android:id="@+id/disc_in_tutorial_ll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         
+         <ImageView
+             android:id="@+id/disc_in_turPic_1_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"      
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_turPic_2_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+              android:layout_marginRight="10dp" 
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_turPic_3_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+              android:layout_marginRight="10dp" 
+             />
+         
+            <ImageView
+             android:id="@+id/disc_in_turPic_4_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp" 
+             />
+         
+     </LinearLayout>
+      
+     </HorizontalScrollView>
+          
+    <TextView 
+        android:id="@+id/disc_in_skinCareStr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/disc_in_tutorial_hrscrl"
+        android:text="Skin Care"
+         android:layout_marginLeft="10dp"
+        />
+    
+    <ImageButton 
+        android:id="@+id/disc_in_rightArrow2_ib"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/disc_in_tutorial_hrscrl"
+        android:background="@drawable/right_arrow"
+        />
+    
+    
+        
+    <HorizontalScrollView
+        android:id="@+id/disc_in_skinCare_hrscrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disc_in_skinCareStr_tv"
+        >
+        <LinearLayout 
+         android:id="@+id/disc_in_skinCare_ll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         
+         <ImageView
+             android:id="@+id/disc_in_skinCare_1_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"      
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_skinCare_2_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp" 
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_skinCare_3_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp" 
+             />
+         
+             <ImageView
+             android:id="@+id/disc_in_skinCare_4_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"      
+             />
+         
+     </LinearLayout>
+     
+     </HorizontalScrollView>
+        
+    <TextView 
+        android:id="@+id/disc_in_darkCircleStr_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/disc_in_skinCare_hrscrl"
+        android:text="Dark Circle"
+        android:layout_marginLeft="10dp"
+        />
+    
+    <ImageButton
+        android:id="@+id/disc_in_rightArrow3_ib"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/disc_in_skinCare_hrscrl"
+        android:background="@drawable/right_arrow"
+        />
+    
+    
+      <HorizontalScrollView
+        android:id="@+id/disc_in_darkCircle_hrscrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/disc_in_darkCircleStr_tv"
+        >
+    
+     <LinearLayout 
+         android:id="@+id/disc_in_darkCircle_ll"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         
+         <ImageView
+             android:id="@+id/disc_in_darkCirclePic_1_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+             android:layout_marginRight="10dp"
+             android:layout_marginLeft="10dp"      
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_darkCirclePic_2_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+              android:layout_marginRight="10dp" 
+             />
+         
+         <ImageView
+             android:id="@+id/disc_in_darkCircle_3_iv"
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_weight="3.3"
+             android:src="@drawable/test"
+              android:layout_marginRight="10dp" 
+             />
+     </LinearLayout>
+     </HorizontalScrollView>
+ 
+</RelativeLayout>
+    </ScrollView> 

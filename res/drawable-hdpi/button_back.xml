@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    >
+<item android:state_focused="true" >
+    
+<shape> 
+    <corners android:radius="5dp"/>
+    <!-- 外边框颜色以及边框大小（注意要指定边框的大小 否则默认为零） -->
+    <stroke android:color="#77FDF5E6" android:width="1dp"/>
+    <solid android:color="#77FDF5E6"/>
+    <padding android:left="10dp" android:top="10dp"
+             android:right="10dp" android:bottom="10dp" />
+    
+</shape>
+    
+    
+</item>
+
+
+
+<item android:state_focused="false" >
+    
+<shape>  
+    
+    <corners android:radius="5dp"/>
+    <!-- 外边框颜色以及边框大小（注意要指定边框的大小 否则默认为零） -->
+    <stroke android:color="#77FDF5E6" android:width="1dp"/>
+    <solid android:color="#77FFC0CB"/>
+    <padding android:left="10dp" android:top="10dp"
+             android:right="10dp" android:bottom="10dp" />
+    
+</shape>
+    
+    
+</item>
+
+
+</selector>

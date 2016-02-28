@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/tko_topLayout_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11222222"     
+        >
+    <ImageButton
+        android:id="@+id/tko_back_ib"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:background="#11223344"
+        />
+    
+    <TextView 
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        />
+    
+    <Button
+        android:id="@+id/tko_delete_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:text="Delete"       
+        />
+      
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/tko_bottomLayout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#22112211"
+         >
+    
+             
+        <EditText 
+            android:id="@+id/tko_input_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:hint="input text here"
+            android:layout_gravity="left"
+            />
+        
+        <Button 
+            android:id="@+id/tko_send_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="SEND"
+            android:layout_gravity="right"
+            />
+   
+               
+    </LinearLayout>
+    
+    
+    <ListView
+        android:id="@+id/tko_dialog_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        android:layout_centerVertical="true"
+        android:layout_below="@id/tko_topLayout_rl"
+        android:layout_above="@id/tko_bottomLayout_ll"
+         />
+        
+        
+        
+    
+    
+    
+</RelativeLayout>

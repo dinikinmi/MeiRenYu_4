@@ -1,0 +1,102 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.meirenyu_4.MainActivity"
+     >
+   
+
+         
+    <include 
+        android:id="@+id/entr_recommend_incl"
+        layout="@layout/recommend"
+        android:visibility="gone"
+         />
+    <include 
+        android:id="@+id/entr_follow_incl"
+        layout="@layout/follow"
+        android:visibility="gone"
+        />
+       
+    <include 
+        android:id="@+id/entr_msg_incl"
+        layout="@layout/message"
+        android:visibility="gone"/>
+    
+    <include 
+        android:id="@+id/entr_discover_incl"
+        layout="@layout/discover_out"
+        android:visibility="gone"
+        />
+ 
+        
+            
+        <LinearLayout
+        android:id="@+id/entr_bottomLayout_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#99FFFFFF"
+         >
+        <ImageButton
+            android:id="@+id/entr_index_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@drawable/index_selector"
+             />
+        
+        <ImageButton
+            android:id="@+id/entr_discover_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/entr_index_ib"
+            android:background="@drawable/discover_selecter"
+             />
+            
+        <ImageButton
+            android:id="@+id/entr_camera_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/entr_discover_ib"
+            android:background="@drawable/camera_1"
+            />
+            
+        
+        <ImageButton
+            android:id="@+id/entr_msg_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/entr_camera_ib"
+             android:background="@drawable/msg_selecter"
+            />
+            
+        <ImageButton
+            android:id="@+id/entr_mineDetails_ib"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/entr_msg_ib"
+            android:background="@drawable/my_1"
+            />
+            
+        </LinearLayout>
+        
+        
+   
+</RelativeLayout>
+ 
+        
